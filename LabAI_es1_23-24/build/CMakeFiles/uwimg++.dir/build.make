@@ -53,10 +53,10 @@ RM = /opt/homebrew/bin/cmake -E rm -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /Users/alessandropaolantonio/Desktop/UNI/LAB_IA/ESERCITAZIONI/LabAI_es1_23-24
+CMAKE_SOURCE_DIR = /Users/alessandropaolantonio/Desktop/UNI/LAB_IA/LabAI-esercitazioni/LabAI_es1_23-24
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /Users/alessandropaolantonio/Desktop/UNI/LAB_IA/ESERCITAZIONI/LabAI_es1_23-24/build
+CMAKE_BINARY_DIR = /Users/alessandropaolantonio/Desktop/UNI/LAB_IA/LabAI-esercitazioni/LabAI_es1_23-24/build
 
 # Include any dependencies generated for this target.
 include CMakeFiles/uwimg++.dir/depend.make
@@ -73,60 +73,60 @@ CMakeFiles/uwimg++.dir/codegen:
 .PHONY : CMakeFiles/uwimg++.dir/codegen
 
 CMakeFiles/uwimg++.dir/src/utils.cpp.o: CMakeFiles/uwimg++.dir/flags.make
-CMakeFiles/uwimg++.dir/src/utils.cpp.o: /Users/alessandropaolantonio/Desktop/UNI/LAB_IA/ESERCITAZIONI/LabAI_es1_23-24/src/utils.cpp
+CMakeFiles/uwimg++.dir/src/utils.cpp.o: /Users/alessandropaolantonio/Desktop/UNI/LAB_IA/LabAI-esercitazioni/LabAI_es1_23-24/src/utils.cpp
 CMakeFiles/uwimg++.dir/src/utils.cpp.o: CMakeFiles/uwimg++.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/Users/alessandropaolantonio/Desktop/UNI/LAB_IA/ESERCITAZIONI/LabAI_es1_23-24/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object CMakeFiles/uwimg++.dir/src/utils.cpp.o"
-	/usr/bin/clang++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/uwimg++.dir/src/utils.cpp.o -MF CMakeFiles/uwimg++.dir/src/utils.cpp.o.d -o CMakeFiles/uwimg++.dir/src/utils.cpp.o -c /Users/alessandropaolantonio/Desktop/UNI/LAB_IA/ESERCITAZIONI/LabAI_es1_23-24/src/utils.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/Users/alessandropaolantonio/Desktop/UNI/LAB_IA/LabAI-esercitazioni/LabAI_es1_23-24/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object CMakeFiles/uwimg++.dir/src/utils.cpp.o"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/uwimg++.dir/src/utils.cpp.o -MF CMakeFiles/uwimg++.dir/src/utils.cpp.o.d -o CMakeFiles/uwimg++.dir/src/utils.cpp.o -c /Users/alessandropaolantonio/Desktop/UNI/LAB_IA/LabAI-esercitazioni/LabAI_es1_23-24/src/utils.cpp
 
 CMakeFiles/uwimg++.dir/src/utils.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/uwimg++.dir/src/utils.cpp.i"
-	/usr/bin/clang++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/alessandropaolantonio/Desktop/UNI/LAB_IA/ESERCITAZIONI/LabAI_es1_23-24/src/utils.cpp > CMakeFiles/uwimg++.dir/src/utils.cpp.i
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/alessandropaolantonio/Desktop/UNI/LAB_IA/LabAI-esercitazioni/LabAI_es1_23-24/src/utils.cpp > CMakeFiles/uwimg++.dir/src/utils.cpp.i
 
 CMakeFiles/uwimg++.dir/src/utils.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/uwimg++.dir/src/utils.cpp.s"
-	/usr/bin/clang++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/alessandropaolantonio/Desktop/UNI/LAB_IA/ESERCITAZIONI/LabAI_es1_23-24/src/utils.cpp -o CMakeFiles/uwimg++.dir/src/utils.cpp.s
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/alessandropaolantonio/Desktop/UNI/LAB_IA/LabAI-esercitazioni/LabAI_es1_23-24/src/utils.cpp -o CMakeFiles/uwimg++.dir/src/utils.cpp.s
 
 CMakeFiles/uwimg++.dir/src/load_image.cpp.o: CMakeFiles/uwimg++.dir/flags.make
-CMakeFiles/uwimg++.dir/src/load_image.cpp.o: /Users/alessandropaolantonio/Desktop/UNI/LAB_IA/ESERCITAZIONI/LabAI_es1_23-24/src/load_image.cpp
+CMakeFiles/uwimg++.dir/src/load_image.cpp.o: /Users/alessandropaolantonio/Desktop/UNI/LAB_IA/LabAI-esercitazioni/LabAI_es1_23-24/src/load_image.cpp
 CMakeFiles/uwimg++.dir/src/load_image.cpp.o: CMakeFiles/uwimg++.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/Users/alessandropaolantonio/Desktop/UNI/LAB_IA/ESERCITAZIONI/LabAI_es1_23-24/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building CXX object CMakeFiles/uwimg++.dir/src/load_image.cpp.o"
-	/usr/bin/clang++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/uwimg++.dir/src/load_image.cpp.o -MF CMakeFiles/uwimg++.dir/src/load_image.cpp.o.d -o CMakeFiles/uwimg++.dir/src/load_image.cpp.o -c /Users/alessandropaolantonio/Desktop/UNI/LAB_IA/ESERCITAZIONI/LabAI_es1_23-24/src/load_image.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/Users/alessandropaolantonio/Desktop/UNI/LAB_IA/LabAI-esercitazioni/LabAI_es1_23-24/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building CXX object CMakeFiles/uwimg++.dir/src/load_image.cpp.o"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/uwimg++.dir/src/load_image.cpp.o -MF CMakeFiles/uwimg++.dir/src/load_image.cpp.o.d -o CMakeFiles/uwimg++.dir/src/load_image.cpp.o -c /Users/alessandropaolantonio/Desktop/UNI/LAB_IA/LabAI-esercitazioni/LabAI_es1_23-24/src/load_image.cpp
 
 CMakeFiles/uwimg++.dir/src/load_image.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/uwimg++.dir/src/load_image.cpp.i"
-	/usr/bin/clang++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/alessandropaolantonio/Desktop/UNI/LAB_IA/ESERCITAZIONI/LabAI_es1_23-24/src/load_image.cpp > CMakeFiles/uwimg++.dir/src/load_image.cpp.i
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/alessandropaolantonio/Desktop/UNI/LAB_IA/LabAI-esercitazioni/LabAI_es1_23-24/src/load_image.cpp > CMakeFiles/uwimg++.dir/src/load_image.cpp.i
 
 CMakeFiles/uwimg++.dir/src/load_image.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/uwimg++.dir/src/load_image.cpp.s"
-	/usr/bin/clang++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/alessandropaolantonio/Desktop/UNI/LAB_IA/ESERCITAZIONI/LabAI_es1_23-24/src/load_image.cpp -o CMakeFiles/uwimg++.dir/src/load_image.cpp.s
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/alessandropaolantonio/Desktop/UNI/LAB_IA/LabAI-esercitazioni/LabAI_es1_23-24/src/load_image.cpp -o CMakeFiles/uwimg++.dir/src/load_image.cpp.s
 
 CMakeFiles/uwimg++.dir/src/access_image.cpp.o: CMakeFiles/uwimg++.dir/flags.make
-CMakeFiles/uwimg++.dir/src/access_image.cpp.o: /Users/alessandropaolantonio/Desktop/UNI/LAB_IA/ESERCITAZIONI/LabAI_es1_23-24/src/access_image.cpp
+CMakeFiles/uwimg++.dir/src/access_image.cpp.o: /Users/alessandropaolantonio/Desktop/UNI/LAB_IA/LabAI-esercitazioni/LabAI_es1_23-24/src/access_image.cpp
 CMakeFiles/uwimg++.dir/src/access_image.cpp.o: CMakeFiles/uwimg++.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/Users/alessandropaolantonio/Desktop/UNI/LAB_IA/ESERCITAZIONI/LabAI_es1_23-24/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Building CXX object CMakeFiles/uwimg++.dir/src/access_image.cpp.o"
-	/usr/bin/clang++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/uwimg++.dir/src/access_image.cpp.o -MF CMakeFiles/uwimg++.dir/src/access_image.cpp.o.d -o CMakeFiles/uwimg++.dir/src/access_image.cpp.o -c /Users/alessandropaolantonio/Desktop/UNI/LAB_IA/ESERCITAZIONI/LabAI_es1_23-24/src/access_image.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/Users/alessandropaolantonio/Desktop/UNI/LAB_IA/LabAI-esercitazioni/LabAI_es1_23-24/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Building CXX object CMakeFiles/uwimg++.dir/src/access_image.cpp.o"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/uwimg++.dir/src/access_image.cpp.o -MF CMakeFiles/uwimg++.dir/src/access_image.cpp.o.d -o CMakeFiles/uwimg++.dir/src/access_image.cpp.o -c /Users/alessandropaolantonio/Desktop/UNI/LAB_IA/LabAI-esercitazioni/LabAI_es1_23-24/src/access_image.cpp
 
 CMakeFiles/uwimg++.dir/src/access_image.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/uwimg++.dir/src/access_image.cpp.i"
-	/usr/bin/clang++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/alessandropaolantonio/Desktop/UNI/LAB_IA/ESERCITAZIONI/LabAI_es1_23-24/src/access_image.cpp > CMakeFiles/uwimg++.dir/src/access_image.cpp.i
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/alessandropaolantonio/Desktop/UNI/LAB_IA/LabAI-esercitazioni/LabAI_es1_23-24/src/access_image.cpp > CMakeFiles/uwimg++.dir/src/access_image.cpp.i
 
 CMakeFiles/uwimg++.dir/src/access_image.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/uwimg++.dir/src/access_image.cpp.s"
-	/usr/bin/clang++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/alessandropaolantonio/Desktop/UNI/LAB_IA/ESERCITAZIONI/LabAI_es1_23-24/src/access_image.cpp -o CMakeFiles/uwimg++.dir/src/access_image.cpp.s
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/alessandropaolantonio/Desktop/UNI/LAB_IA/LabAI-esercitazioni/LabAI_es1_23-24/src/access_image.cpp -o CMakeFiles/uwimg++.dir/src/access_image.cpp.s
 
 CMakeFiles/uwimg++.dir/src/process_image.cpp.o: CMakeFiles/uwimg++.dir/flags.make
-CMakeFiles/uwimg++.dir/src/process_image.cpp.o: /Users/alessandropaolantonio/Desktop/UNI/LAB_IA/ESERCITAZIONI/LabAI_es1_23-24/src/process_image.cpp
+CMakeFiles/uwimg++.dir/src/process_image.cpp.o: /Users/alessandropaolantonio/Desktop/UNI/LAB_IA/LabAI-esercitazioni/LabAI_es1_23-24/src/process_image.cpp
 CMakeFiles/uwimg++.dir/src/process_image.cpp.o: CMakeFiles/uwimg++.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/Users/alessandropaolantonio/Desktop/UNI/LAB_IA/ESERCITAZIONI/LabAI_es1_23-24/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Building CXX object CMakeFiles/uwimg++.dir/src/process_image.cpp.o"
-	/usr/bin/clang++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/uwimg++.dir/src/process_image.cpp.o -MF CMakeFiles/uwimg++.dir/src/process_image.cpp.o.d -o CMakeFiles/uwimg++.dir/src/process_image.cpp.o -c /Users/alessandropaolantonio/Desktop/UNI/LAB_IA/ESERCITAZIONI/LabAI_es1_23-24/src/process_image.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/Users/alessandropaolantonio/Desktop/UNI/LAB_IA/LabAI-esercitazioni/LabAI_es1_23-24/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Building CXX object CMakeFiles/uwimg++.dir/src/process_image.cpp.o"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/uwimg++.dir/src/process_image.cpp.o -MF CMakeFiles/uwimg++.dir/src/process_image.cpp.o.d -o CMakeFiles/uwimg++.dir/src/process_image.cpp.o -c /Users/alessandropaolantonio/Desktop/UNI/LAB_IA/LabAI-esercitazioni/LabAI_es1_23-24/src/process_image.cpp
 
 CMakeFiles/uwimg++.dir/src/process_image.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/uwimg++.dir/src/process_image.cpp.i"
-	/usr/bin/clang++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/alessandropaolantonio/Desktop/UNI/LAB_IA/ESERCITAZIONI/LabAI_es1_23-24/src/process_image.cpp > CMakeFiles/uwimg++.dir/src/process_image.cpp.i
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/alessandropaolantonio/Desktop/UNI/LAB_IA/LabAI-esercitazioni/LabAI_es1_23-24/src/process_image.cpp > CMakeFiles/uwimg++.dir/src/process_image.cpp.i
 
 CMakeFiles/uwimg++.dir/src/process_image.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/uwimg++.dir/src/process_image.cpp.s"
-	/usr/bin/clang++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/alessandropaolantonio/Desktop/UNI/LAB_IA/ESERCITAZIONI/LabAI_es1_23-24/src/process_image.cpp -o CMakeFiles/uwimg++.dir/src/process_image.cpp.s
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/alessandropaolantonio/Desktop/UNI/LAB_IA/LabAI-esercitazioni/LabAI_es1_23-24/src/process_image.cpp -o CMakeFiles/uwimg++.dir/src/process_image.cpp.s
 
 # Object files for target uwimg++
 uwimg_______OBJECTS = \
@@ -144,7 +144,7 @@ libuwimg++.dylib: CMakeFiles/uwimg++.dir/src/access_image.cpp.o
 libuwimg++.dylib: CMakeFiles/uwimg++.dir/src/process_image.cpp.o
 libuwimg++.dylib: CMakeFiles/uwimg++.dir/build.make
 libuwimg++.dylib: CMakeFiles/uwimg++.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --bold --progress-dir=/Users/alessandropaolantonio/Desktop/UNI/LAB_IA/ESERCITAZIONI/LabAI_es1_23-24/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_5) "Linking CXX shared library libuwimg++.dylib"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --bold --progress-dir=/Users/alessandropaolantonio/Desktop/UNI/LAB_IA/LabAI-esercitazioni/LabAI_es1_23-24/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_5) "Linking CXX shared library libuwimg++.dylib"
 	$(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/uwimg++.dir/link.txt --verbose=$(VERBOSE)
 
 # Rule to build all files generated by this target.
@@ -156,6 +156,6 @@ CMakeFiles/uwimg++.dir/clean:
 .PHONY : CMakeFiles/uwimg++.dir/clean
 
 CMakeFiles/uwimg++.dir/depend:
-	cd /Users/alessandropaolantonio/Desktop/UNI/LAB_IA/ESERCITAZIONI/LabAI_es1_23-24/build && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /Users/alessandropaolantonio/Desktop/UNI/LAB_IA/ESERCITAZIONI/LabAI_es1_23-24 /Users/alessandropaolantonio/Desktop/UNI/LAB_IA/ESERCITAZIONI/LabAI_es1_23-24 /Users/alessandropaolantonio/Desktop/UNI/LAB_IA/ESERCITAZIONI/LabAI_es1_23-24/build /Users/alessandropaolantonio/Desktop/UNI/LAB_IA/ESERCITAZIONI/LabAI_es1_23-24/build /Users/alessandropaolantonio/Desktop/UNI/LAB_IA/ESERCITAZIONI/LabAI_es1_23-24/build/CMakeFiles/uwimg++.dir/DependInfo.cmake "--color=$(COLOR)"
+	cd /Users/alessandropaolantonio/Desktop/UNI/LAB_IA/LabAI-esercitazioni/LabAI_es1_23-24/build && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /Users/alessandropaolantonio/Desktop/UNI/LAB_IA/LabAI-esercitazioni/LabAI_es1_23-24 /Users/alessandropaolantonio/Desktop/UNI/LAB_IA/LabAI-esercitazioni/LabAI_es1_23-24 /Users/alessandropaolantonio/Desktop/UNI/LAB_IA/LabAI-esercitazioni/LabAI_es1_23-24/build /Users/alessandropaolantonio/Desktop/UNI/LAB_IA/LabAI-esercitazioni/LabAI_es1_23-24/build /Users/alessandropaolantonio/Desktop/UNI/LAB_IA/LabAI-esercitazioni/LabAI_es1_23-24/build/CMakeFiles/uwimg++.dir/DependInfo.cmake "--color=$(COLOR)"
 .PHONY : CMakeFiles/uwimg++.dir/depend
 

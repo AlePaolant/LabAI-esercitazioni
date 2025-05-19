@@ -53,10 +53,10 @@ RM = /opt/homebrew/bin/cmake -E rm -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /Users/alessandropaolantonio/Desktop/UNI/LAB_IA/ESERCITAZIONI/LabAI_es1_23-24
+CMAKE_SOURCE_DIR = /Users/alessandropaolantonio/Desktop/UNI/LAB_IA/LabAI-esercitazioni/LabAI_es1_23-24
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /Users/alessandropaolantonio/Desktop/UNI/LAB_IA/ESERCITAZIONI/LabAI_es1_23-24/build
+CMAKE_BINARY_DIR = /Users/alessandropaolantonio/Desktop/UNI/LAB_IA/LabAI-esercitazioni/LabAI_es1_23-24/build
 
 # Include any dependencies generated for this target.
 include CMakeFiles/test0.dir/depend.make
@@ -73,18 +73,18 @@ CMakeFiles/test0.dir/codegen:
 .PHONY : CMakeFiles/test0.dir/codegen
 
 CMakeFiles/test0.dir/src/test/test0.cpp.o: CMakeFiles/test0.dir/flags.make
-CMakeFiles/test0.dir/src/test/test0.cpp.o: /Users/alessandropaolantonio/Desktop/UNI/LAB_IA/ESERCITAZIONI/LabAI_es1_23-24/src/test/test0.cpp
+CMakeFiles/test0.dir/src/test/test0.cpp.o: /Users/alessandropaolantonio/Desktop/UNI/LAB_IA/LabAI-esercitazioni/LabAI_es1_23-24/src/test/test0.cpp
 CMakeFiles/test0.dir/src/test/test0.cpp.o: CMakeFiles/test0.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/Users/alessandropaolantonio/Desktop/UNI/LAB_IA/ESERCITAZIONI/LabAI_es1_23-24/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object CMakeFiles/test0.dir/src/test/test0.cpp.o"
-	/usr/bin/clang++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/test0.dir/src/test/test0.cpp.o -MF CMakeFiles/test0.dir/src/test/test0.cpp.o.d -o CMakeFiles/test0.dir/src/test/test0.cpp.o -c /Users/alessandropaolantonio/Desktop/UNI/LAB_IA/ESERCITAZIONI/LabAI_es1_23-24/src/test/test0.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/Users/alessandropaolantonio/Desktop/UNI/LAB_IA/LabAI-esercitazioni/LabAI_es1_23-24/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object CMakeFiles/test0.dir/src/test/test0.cpp.o"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/test0.dir/src/test/test0.cpp.o -MF CMakeFiles/test0.dir/src/test/test0.cpp.o.d -o CMakeFiles/test0.dir/src/test/test0.cpp.o -c /Users/alessandropaolantonio/Desktop/UNI/LAB_IA/LabAI-esercitazioni/LabAI_es1_23-24/src/test/test0.cpp
 
 CMakeFiles/test0.dir/src/test/test0.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/test0.dir/src/test/test0.cpp.i"
-	/usr/bin/clang++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/alessandropaolantonio/Desktop/UNI/LAB_IA/ESERCITAZIONI/LabAI_es1_23-24/src/test/test0.cpp > CMakeFiles/test0.dir/src/test/test0.cpp.i
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/alessandropaolantonio/Desktop/UNI/LAB_IA/LabAI-esercitazioni/LabAI_es1_23-24/src/test/test0.cpp > CMakeFiles/test0.dir/src/test/test0.cpp.i
 
 CMakeFiles/test0.dir/src/test/test0.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/test0.dir/src/test/test0.cpp.s"
-	/usr/bin/clang++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/alessandropaolantonio/Desktop/UNI/LAB_IA/ESERCITAZIONI/LabAI_es1_23-24/src/test/test0.cpp -o CMakeFiles/test0.dir/src/test/test0.cpp.s
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/alessandropaolantonio/Desktop/UNI/LAB_IA/LabAI-esercitazioni/LabAI_es1_23-24/src/test/test0.cpp -o CMakeFiles/test0.dir/src/test/test0.cpp.s
 
 # Object files for target test0
 test0_OBJECTS = \
@@ -93,15 +93,15 @@ test0_OBJECTS = \
 # External object files for target test0
 test0_EXTERNAL_OBJECTS =
 
-/Users/alessandropaolantonio/Desktop/UNI/LAB_IA/ESERCITAZIONI/LabAI_es1_23-24/test0: CMakeFiles/test0.dir/src/test/test0.cpp.o
-/Users/alessandropaolantonio/Desktop/UNI/LAB_IA/ESERCITAZIONI/LabAI_es1_23-24/test0: CMakeFiles/test0.dir/build.make
-/Users/alessandropaolantonio/Desktop/UNI/LAB_IA/ESERCITAZIONI/LabAI_es1_23-24/test0: libuwimg++.dylib
-/Users/alessandropaolantonio/Desktop/UNI/LAB_IA/ESERCITAZIONI/LabAI_es1_23-24/test0: CMakeFiles/test0.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --bold --progress-dir=/Users/alessandropaolantonio/Desktop/UNI/LAB_IA/ESERCITAZIONI/LabAI_es1_23-24/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Linking CXX executable /Users/alessandropaolantonio/Desktop/UNI/LAB_IA/ESERCITAZIONI/LabAI_es1_23-24/test0"
+/Users/alessandropaolantonio/Desktop/UNI/LAB_IA/LabAI-esercitazioni/LabAI_es1_23-24/test0: CMakeFiles/test0.dir/src/test/test0.cpp.o
+/Users/alessandropaolantonio/Desktop/UNI/LAB_IA/LabAI-esercitazioni/LabAI_es1_23-24/test0: CMakeFiles/test0.dir/build.make
+/Users/alessandropaolantonio/Desktop/UNI/LAB_IA/LabAI-esercitazioni/LabAI_es1_23-24/test0: libuwimg++.dylib
+/Users/alessandropaolantonio/Desktop/UNI/LAB_IA/LabAI-esercitazioni/LabAI_es1_23-24/test0: CMakeFiles/test0.dir/link.txt
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --bold --progress-dir=/Users/alessandropaolantonio/Desktop/UNI/LAB_IA/LabAI-esercitazioni/LabAI_es1_23-24/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Linking CXX executable /Users/alessandropaolantonio/Desktop/UNI/LAB_IA/LabAI-esercitazioni/LabAI_es1_23-24/test0"
 	$(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/test0.dir/link.txt --verbose=$(VERBOSE)
 
 # Rule to build all files generated by this target.
-CMakeFiles/test0.dir/build: /Users/alessandropaolantonio/Desktop/UNI/LAB_IA/ESERCITAZIONI/LabAI_es1_23-24/test0
+CMakeFiles/test0.dir/build: /Users/alessandropaolantonio/Desktop/UNI/LAB_IA/LabAI-esercitazioni/LabAI_es1_23-24/test0
 .PHONY : CMakeFiles/test0.dir/build
 
 CMakeFiles/test0.dir/clean:
@@ -109,6 +109,6 @@ CMakeFiles/test0.dir/clean:
 .PHONY : CMakeFiles/test0.dir/clean
 
 CMakeFiles/test0.dir/depend:
-	cd /Users/alessandropaolantonio/Desktop/UNI/LAB_IA/ESERCITAZIONI/LabAI_es1_23-24/build && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /Users/alessandropaolantonio/Desktop/UNI/LAB_IA/ESERCITAZIONI/LabAI_es1_23-24 /Users/alessandropaolantonio/Desktop/UNI/LAB_IA/ESERCITAZIONI/LabAI_es1_23-24 /Users/alessandropaolantonio/Desktop/UNI/LAB_IA/ESERCITAZIONI/LabAI_es1_23-24/build /Users/alessandropaolantonio/Desktop/UNI/LAB_IA/ESERCITAZIONI/LabAI_es1_23-24/build /Users/alessandropaolantonio/Desktop/UNI/LAB_IA/ESERCITAZIONI/LabAI_es1_23-24/build/CMakeFiles/test0.dir/DependInfo.cmake "--color=$(COLOR)"
+	cd /Users/alessandropaolantonio/Desktop/UNI/LAB_IA/LabAI-esercitazioni/LabAI_es1_23-24/build && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /Users/alessandropaolantonio/Desktop/UNI/LAB_IA/LabAI-esercitazioni/LabAI_es1_23-24 /Users/alessandropaolantonio/Desktop/UNI/LAB_IA/LabAI-esercitazioni/LabAI_es1_23-24 /Users/alessandropaolantonio/Desktop/UNI/LAB_IA/LabAI-esercitazioni/LabAI_es1_23-24/build /Users/alessandropaolantonio/Desktop/UNI/LAB_IA/LabAI-esercitazioni/LabAI_es1_23-24/build /Users/alessandropaolantonio/Desktop/UNI/LAB_IA/LabAI-esercitazioni/LabAI_es1_23-24/build/CMakeFiles/test0.dir/DependInfo.cmake "--color=$(COLOR)"
 .PHONY : CMakeFiles/test0.dir/depend
 

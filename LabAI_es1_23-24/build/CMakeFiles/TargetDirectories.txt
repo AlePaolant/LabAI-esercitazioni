@@ -1,4 +1,4 @@
-/Users/alessandropaolantonio/Desktop/UNI/LAB_IA/ESERCITAZIONI/LabAI_es1_23-24/build/CMakeFiles/uwimg++.dir
-/Users/alessandropaolantonio/Desktop/UNI/LAB_IA/ESERCITAZIONI/LabAI_es1_23-24/build/CMakeFiles/test0.dir
-/Users/alessandropaolantonio/Desktop/UNI/LAB_IA/ESERCITAZIONI/LabAI_es1_23-24/build/CMakeFiles/edit_cache.dir
-/Users/alessandropaolantonio/Desktop/UNI/LAB_IA/ESERCITAZIONI/LabAI_es1_23-24/build/CMakeFiles/rebuild_cache.dir
+/Users/alessandropaolantonio/Desktop/UNI/LAB_IA/LabAI-esercitazioni/LabAI_es1_23-24/build/CMakeFiles/uwimg++.dir
+/Users/alessandropaolantonio/Desktop/UNI/LAB_IA/LabAI-esercitazioni/LabAI_es1_23-24/build/CMakeFiles/test0.dir
+/Users/alessandropaolantonio/Desktop/UNI/LAB_IA/LabAI-esercitazioni/LabAI_es1_23-24/build/CMakeFiles/edit_cache.dir
+/Users/alessandropaolantonio/Desktop/UNI/LAB_IA/LabAI-esercitazioni/LabAI_es1_23-24/build/CMakeFiles/rebuild_cache.dir

@@ -8,10 +8,10 @@ set(CMAKE_DEPENDS_LANGUAGES
 
 # The set of dependency files which are needed:
 set(CMAKE_DEPENDS_DEPENDENCY_FILES
-  "/Users/alessandropaolantonio/Desktop/UNI/LAB_IA/ESERCITAZIONI/LabAI_es1_23-24/src/access_image.cpp" "CMakeFiles/uwimg++.dir/src/access_image.cpp.o" "gcc" "CMakeFiles/uwimg++.dir/src/access_image.cpp.o.d"
-  "/Users/alessandropaolantonio/Desktop/UNI/LAB_IA/ESERCITAZIONI/LabAI_es1_23-24/src/load_image.cpp" "CMakeFiles/uwimg++.dir/src/load_image.cpp.o" "gcc" "CMakeFiles/uwimg++.dir/src/load_image.cpp.o.d"
-  "/Users/alessandropaolantonio/Desktop/UNI/LAB_IA/ESERCITAZIONI/LabAI_es1_23-24/src/process_image.cpp" "CMakeFiles/uwimg++.dir/src/process_image.cpp.o" "gcc" "CMakeFiles/uwimg++.dir/src/process_image.cpp.o.d"
-  "/Users/alessandropaolantonio/Desktop/UNI/LAB_IA/ESERCITAZIONI/LabAI_es1_23-24/src/utils.cpp" "CMakeFiles/uwimg++.dir/src/utils.cpp.o" "gcc" "CMakeFiles/uwimg++.dir/src/utils.cpp.o.d"
+  "/Users/alessandropaolantonio/Desktop/UNI/LAB_IA/LabAI-esercitazioni/LabAI_es1_23-24/src/access_image.cpp" "CMakeFiles/uwimg++.dir/src/access_image.cpp.o" "gcc" "CMakeFiles/uwimg++.dir/src/access_image.cpp.o.d"
+  "/Users/alessandropaolantonio/Desktop/UNI/LAB_IA/LabAI-esercitazioni/LabAI_es1_23-24/src/load_image.cpp" "CMakeFiles/uwimg++.dir/src/load_image.cpp.o" "gcc" "CMakeFiles/uwimg++.dir/src/load_image.cpp.o.d"
+  "/Users/alessandropaolantonio/Desktop/UNI/LAB_IA/LabAI-esercitazioni/LabAI_es1_23-24/src/process_image.cpp" "CMakeFiles/uwimg++.dir/src/process_image.cpp.o" "gcc" "CMakeFiles/uwimg++.dir/src/process_image.cpp.o.d"
+  "/Users/alessandropaolantonio/Desktop/UNI/LAB_IA/LabAI-esercitazioni/LabAI_es1_23-24/src/utils.cpp" "CMakeFiles/uwimg++.dir/src/utils.cpp.o" "gcc" "CMakeFiles/uwimg++.dir/src/utils.cpp.o.d"
   )
 
 # Targets to which this target links which contain Fortran sources.

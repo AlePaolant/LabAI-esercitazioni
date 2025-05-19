@@ -1,0 +1,32 @@
+[
+{
+  "directory": "/Users/alessandropaolantonio/Desktop/UNI/LAB_IA/ESERCITAZIONI/LabAI_es1_23-24/build",
+  "command": "/usr/bin/clang++ -Duwimg___EXPORTS  -fdiagnostics-color=always -std=c++2b -pthread -Og -g -march=native -fPIC -g -arch arm64 -fPIC -o CMakeFiles/uwimg++.dir/src/utils.cpp.o -c /Users/alessandropaolantonio/Desktop/UNI/LAB_IA/ESERCITAZIONI/LabAI_es1_23-24/src/utils.cpp",
+  "file": "/Users/alessandropaolantonio/Desktop/UNI/LAB_IA/ESERCITAZIONI/LabAI_es1_23-24/src/utils.cpp",
+  "output": "CMakeFiles/uwimg++.dir/src/utils.cpp.o"
+},
+{
+  "directory": "/Users/alessandropaolantonio/Desktop/UNI/LAB_IA/ESERCITAZIONI/LabAI_es1_23-24/build",
+  "command": "/usr/bin/clang++ -Duwimg___EXPORTS  -fdiagnostics-color=always -std=c++2b -pthread -Og -g -march=native -fPIC -g -arch arm64 -fPIC -o CMakeFiles/uwimg++.dir/src/load_image.cpp.o -c /Users/alessandropaolantonio/Desktop/UNI/LAB_IA/ESERCITAZIONI/LabAI_es1_23-24/src/load_image.cpp",
+  "file": "/Users/alessandropaolantonio/Desktop/UNI/LAB_IA/ESERCITAZIONI/LabAI_es1_23-24/src/load_image.cpp",
+  "output": "CMakeFiles/uwimg++.dir/src/load_image.cpp.o"
+},
+{
+  "directory": "/Users/alessandropaolantonio/Desktop/UNI/LAB_IA/ESERCITAZIONI/LabAI_es1_23-24/build",
+  "command": "/usr/bin/clang++ -Duwimg___EXPORTS  -fdiagnostics-color=always -std=c++2b -pthread -Og -g -march=native -fPIC -g -arch arm64 -fPIC -o CMakeFiles/uwimg++.dir/src/access_image.cpp.o -c /Users/alessandropaolantonio/Desktop/UNI/LAB_IA/ESERCITAZIONI/LabAI_es1_23-24/src/access_image.cpp",
+  "file": "/Users/alessandropaolantonio/Desktop/UNI/LAB_IA/ESERCITAZIONI/LabAI_es1_23-24/src/access_image.cpp",
+  "output": "CMakeFiles/uwimg++.dir/src/access_image.cpp.o"
+},
+{
+  "directory": "/Users/alessandropaolantonio/Desktop/UNI/LAB_IA/ESERCITAZIONI/LabAI_es1_23-24/build",
+  "command": "/usr/bin/clang++ -Duwimg___EXPORTS  -fdiagnostics-color=always -std=c++2b -pthread -Og -g -march=native -fPIC -g -arch arm64 -fPIC -o CMakeFiles/uwimg++.dir/src/process_image.cpp.o -c /Users/alessandropaolantonio/Desktop/UNI/LAB_IA/ESERCITAZIONI/LabAI_es1_23-24/src/process_image.cpp",
+  "file": "/Users/alessandropaolantonio/Desktop/UNI/LAB_IA/ESERCITAZIONI/LabAI_es1_23-24/src/process_image.cpp",
+  "output": "CMakeFiles/uwimg++.dir/src/process_image.cpp.o"
+},
+{
+  "directory": "/Users/alessandropaolantonio/Desktop/UNI/LAB_IA/ESERCITAZIONI/LabAI_es1_23-24/build",
+  "command": "/usr/bin/clang++   -fdiagnostics-color=always -std=c++2b -pthread -Og -g -march=native -fPIC -g -arch arm64 -o CMakeFiles/test0.dir/src/test/test0.cpp.o -c /Users/alessandropaolantonio/Desktop/UNI/LAB_IA/ESERCITAZIONI/LabAI_es1_23-24/src/test/test0.cpp",
+  "file": "/Users/alessandropaolantonio/Desktop/UNI/LAB_IA/ESERCITAZIONI/LabAI_es1_23-24/src/test/test0.cpp",
+  "output": "CMakeFiles/test0.dir/src/test/test0.cpp.o"
+}
+]

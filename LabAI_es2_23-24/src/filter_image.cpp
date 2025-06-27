@@ -12,8 +12,6 @@
 void l1_normalize(Image &im)
 {
     float sum = 0.0f;
-
-    // somma tutti i pixel
     for (int c = 0; c < im.c; ++c){
         for (int y = 0; y < im.h; ++y){
             for (int x = 0; x < im.w; ++x){
@@ -42,13 +40,12 @@ Image make_box_filter(int w)
     assert(w % 2); // w needs to be odd
 
     Image filter(w, w, 1);
+    float normalizer = 1.0 / (w * w);
     for (int y = 0; y < w; ++y) {
         for (int x = 0; x < w; ++x) {
-            filter(x, y, 0) = 1.0f; 
+            filter(x, y, 0) = normalizer;
         }
     }
-
-    l1_normalize(filter);
     return filter;
 }
 
@@ -99,8 +96,7 @@ Image convolve_image(const Image &im, const Image &filter, bool preserve)
 // const Image& filter: filter to convolve with
 // bool preserve: whether to preserve number of channels
 // returns the convolved image
-Image convolve_image_fast(const Image &im, const Image &filter, bool preserve)
-{
+Image convolve_image_fast(const Image &im, const Image &filter, bool preserve) {
     assert(filter.c == 1);
     Image ret;
     // This is the case when we need to use the function clamped_pixel(x,y,c).
@@ -436,12 +432,56 @@ Image bilateral_filter(const Image &im, float sigma1, float sigma2)
 // returns the result of applying bilateral filtering to im
 Image bilateral_filter_fast(const Image &im, float sigma1, float sigma2)
 {
-    Image bf = im;
+    Image result(im.w, im.h, im.c);
 
-    // TODO: Your fast bilateral code
-    NOT_IMPLEMENTED();
+    int radius = static_cast<int>(std::ceil(2 * sigma1)); // filter window size
+    float sigma_spatial2 = 2 * sigma1 * sigma1;
+    float sigma_range2 = 2 * sigma2 * sigma2;
 
-    return bf;
+    for (int c = 0; c < im.c; ++c)
+    {
+        for (int y = 0; y < im.h; ++y)
+        {
+            for (int x = 0; x < im.w; ++x)
+            {
+                float weight_sum = 0.0f;
+                float value_sum = 0.0f;
+                float center_val = im(x, y, c);
+
+                for (int dy = -radius; dy <= radius; ++dy)
+                {
+                    for (int dx = -radius; dx <= radius; ++dx)
+                    {
+                        int nx = x + dx;
+                        int ny = y + dy;
+
+                        // Clamp coordinates
+                        nx = std::min(std::max(nx, 0), im.w - 1);
+                        ny = std::min(std::max(ny, 0), im.h - 1);
+
+                        float neighbor_val = im(nx, ny, c);
+
+                        // Spatial weight
+                        float dist2 = dx * dx + dy * dy;
+                        float spatial_weight = std::exp(-dist2 / sigma_spatial2);
+
+                        // Range weight
+                        float diff = neighbor_val - center_val;
+                        float range_weight = std::exp(-(diff * diff) / sigma_range2);
+
+                        float weight = spatial_weight * range_weight;
+
+                        weight_sum += weight;
+                        value_sum += neighbor_val * weight;
+                    }
+                }
+
+                result(x, y, c) = value_sum / weight_sum;
+            }
+        }
+    }
+
+    return result;
 }
 
 // HM #5
@@ -450,23 +490,17 @@ float *compute_histogram(const Image &im, int ch, int num_bins)
 {
     float *hist = (float *)malloc(sizeof(float) * num_bins);
     for (int i = 0; i < num_bins; ++i)
+        hist[i] = 0.0f;
+
+    for (int y = 0; y < im.h; ++y)
     {
-        hist[i] = 0;
-    }
-
-    int total_pixels = im.w * im.h;
-
-    for (int y = 0; y < im.h; ++y) {
-        for (int x = 0; x < im.w; ++x) {
+        for (int x = 0; x < im.w; ++x)
+        {
             float val = im(x, y, ch);
             int bin = (int)(val * (num_bins - 1));
-            bin = std::clamp(bin, 0, num_bins - 1);
-            hist[bin] += 1.0f;
+            hist[bin] += 1;
         }
     }
-
-    for (int i = 0; i < num_bins; ++i)
-        hist[i] /= total_pixels;
 
     return hist;
 }
@@ -474,27 +508,74 @@ float *compute_histogram(const Image &im, int ch, int num_bins)
 float *compute_CDF(float *hist, int num_bins)
 {
     float *cdf = (float *)malloc(sizeof(float) * num_bins);
+    float sum = 0.0f;
 
-    cdf[0] = hist[0];
+    for (int i = 0; i < num_bins; ++i)
+    {
+        sum += hist[i];
+        cdf[i] = sum;
+    }
 
-    for (int i = 1; i < num_bins; ++i)
-        cdf[i] = cdf[i - 1] + hist[i];
+    // Normalize to [0, 1]
+    for (int i = 0; i < num_bins; ++i)
+    {
+        cdf[i] /= sum;
+    }
+
     return cdf;
 }
 
 Image histogram_equalization_hsv(const Image &im, int num_bins)
 {
-    Image new_im(im);
-    for (int c = 0; c < im.c; ++c) {
-        float* hist = compute_histogram(im, c, num_bins);
-        float* cdf = compute_CDF(hist, num_bins);
+    Image hsv_im(im);
+    float eps = 1.0 / (num_bins * 1000);
 
-        // Ora per ogni pixel sostituisco con cdf(bin)
-        for (int y = 0; y < im.h; ++y) {
-            for (int x = 0; x < im.w; ++x) {
+    rgb_to_hsv(hsv_im);  // modifica in-place
+
+    float *hist = compute_histogram(hsv_im, 2, num_bins); // canale V
+    float *cdf = compute_CDF(hist, num_bins);
+
+    for (int y = 0; y < im.h; ++y)
+    {
+        for (int x = 0; x < im.w; ++x)
+        {
+            float val = hsv_im(x, y, 2);
+            int bin = (int)(val * num_bins);
+            if (bin >= num_bins) bin = num_bins - 1;
+
+            float new_val = cdf[bin];
+            if (new_val < eps) new_val = eps;
+            if (new_val > 1.0f) new_val = 1.0f;
+
+            hsv_im(x, y, 2) = new_val;
+        }
+    }
+
+    hsv_to_rgb(hsv_im);  // modifica in-place
+    free(hist);
+    free(cdf);
+
+    return hsv_im;
+}
+
+Image histogram_equalization_rgb(const Image &im, int num_bins)
+{
+    Image new_im(im);
+
+    for (int c = 0; c < im.c; ++c)
+    {
+        float *hist = compute_histogram(im, c, num_bins);
+        float *cdf = compute_CDF(hist, num_bins);
+
+        for (int y = 0; y < im.h; ++y)
+        {
+            for (int x = 0; x < im.w; ++x)
+            {
                 float val = im(x, y, c);
                 int bin = (int)(val * (num_bins - 1));
-                bin = std::clamp(bin, 0, num_bins - 1);
+                if (bin < 0) bin = 0;
+                if (bin >= num_bins) bin = num_bins - 1;
+
                 new_im(x, y, c) = cdf[bin];
             }
         }
@@ -502,31 +583,8 @@ Image histogram_equalization_hsv(const Image &im, int num_bins)
         free(hist);
         free(cdf);
     }
+
     return new_im;
-}
-
-Image histogram_equalization_rgb(const Image &im, int num_bins)
-{
-    Image hsv_im(im);  
-    rgb_to_hsv(hsv_im); 
-    float* hist = compute_histogram(hsv_im, 2, num_bins); 
-    float* cdf = compute_CDF(hist, num_bins);
-
-    for (int y = 0; y < im.h; ++y) {
-        for (int x = 0; x < im.w; ++x) {
-            float v = hsv_im(x, y, 2);
-            int bin = (int)(v * (num_bins - 1));
-            bin = std::clamp(bin, 0, num_bins - 1);
-            hsv_im(x, y, 2) = cdf[bin];
-        }
-    }
-
-    free(hist);
-    free(cdf);
-    
-    hsv_to_rgb(hsv_im); // riconverti in-place
-    return hsv_im;  
-
 }
 
 // HELPER MEMBER FXNS
